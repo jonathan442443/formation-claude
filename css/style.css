@@ -824,13 +824,13 @@ body {
 .site-footer {
   background:var(--bleu-sombre);
   text-align:center;
-  padding:40px 24px;
+  padding:60px 24px;
   border-top:1px solid rgba(255,255,255,0.1);
 }
 
 .footer-name {
   font-family:'Playfair Display', serif;
-  font-size:18px;
+  font-size:24px;
   font-weight:700;
   color:#fff;
   margin:0;
@@ -838,14 +838,14 @@ body {
 
 .footer-role {
   font-family:'DM Sans', sans-serif;
-  font-size:14px;
+  font-size:16px;
   color:rgba(255,255,255,0.6);
-  margin:6px 0 16px;
+  margin:10px 0 20px;
 }
 
 .footer-link {
   font-family:'DM Sans', sans-serif;
-  font-size:14px;
+  font-size:16px;
   color:var(--orange);
   text-decoration:none;
   font-weight:600;
