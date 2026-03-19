@@ -1,4 +1,4 @@
-export default {partie:1,num:4,locked:false,titre:"Parler à Claude comme à un humain",sub:"5 techniques pour des résultats sur mesure du premier coup.",duree:"25 min",niv:"Débutant",
+export default {partie:1,num:4,locked:false,titre:"Fais parler Claude comme toi",sub:"5 techniques pour des résultats sur mesure du premier coup.",duree:"25 min",niv:"Débutant",
 sections:[
 {lbl:"🎯 Accroche",titre:"Le cran au-dessus",html:`<p class="block-text">Tu maîtrises RCTF. Avec ces 4 ingrédients, tu obtiens déjà de bons résultats — bien meilleurs que la majorité des utilisateurs.</p>
 <p class="block-text">Mais parfois, la réponse est correcte… sans être vraiment toi. Le ton est bon, la structure aussi, mais ça sonne "IA". Ce module te donne 5 techniques pour que Claude produise des résultats sur mesure du premier coup.</p>`},
