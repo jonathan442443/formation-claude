@@ -1,7 +1,7 @@
 export default {partie:2,num:7,locked:false,titre:"Claude au quotidien",sub:"Combine tout ce que tu as appris sur tes vraies tâches.",duree:"25 min",niv:"Intermédiaire",
 sections:[
 {lbl:"🎯 Accroche",titre:"Tout est en place — maintenant on travaille",html:`<p class="block-text">Tu as les techniques. Tu as les outils. Tu as configuré ton espace de travail. Maintenant, on va combiner tout ça sur les tâches que tu fais vraiment — chaque jour, chaque semaine.</p>
-<p class="block-text">Pourquoi combiner ? Un prompt isolé te fait gagner 5 minutes. Un système configuré — Projet + Compétences + Connecteurs + chaînage — te fait gagner 1 heure, chaque jour.</p>
+<p class="block-text">Pourquoi combiner ? Un prompt isolé te fait gagner 5 minutes. Un système configuré — Projet + Compétences + Connecteurs + chaînage — te fait gagner 1 heure, chaque jour. Et parfois, Claude te montre ce que tu n'aurais pas vu seul : un angle mort dans ton raisonnement, une connexion entre deux idées, une perspective nouvelle.</p>
 <p class="block-text">Ce module prend 5 situations concrètes et te montre comment les traiter en combinant tout. Pas un prompt isolé — un processus complet.</p>`},
 {lbl:"💡 Notion clé",titre:"5 situations, 5 processus complets",html:`<div class="encadre bleu"><div class="encadre-title">✉️ Situation 1 — Répondre à un email délicat</div><ol style="padding-left:16px;display:flex;flex-direction:column;gap:6px;">
 <li style="font-size:14px;color:#444;"><em>"Montre-moi le fil de discussion avec [nom] sur Gmail."</em> — Claude lit tout le contexte.</li>
