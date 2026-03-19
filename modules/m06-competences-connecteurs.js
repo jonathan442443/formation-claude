@@ -14,19 +14,25 @@ sections:[
 <tr><td>Rédiger les instructions</td><td>Si tu sais ce que tu veux</td><td>Formulaire avec 3 champs : Nom, Description, Instructions</td></tr>
 <tr><td>Téléverser</td><td>Utilisateurs avancés</td><td>Upload d'un fichier de compétence</td></tr></table></div>
 <div class="encadre vert" style="margin-top:12px;"><div class="encadre-title">💡 La description est cruciale</div><p>C'est elle qui permet à Claude de savoir <em>quand</em> activer la compétence. Sois précis : "À utiliser quand l'utilisateur demande un email professionnel, une relance, ou un message de prospection."</p></div>
-<div class="encadre violet" style="margin-top:12px;"><div class="encadre-title">3 exemples de compétences puissantes</div>
-<p style="margin-top:8px;"><strong>1. Mon style d'écriture</strong></p>
+<div class="encadre violet" style="margin-top:12px;"><div class="encadre-title">3 compétences à découvrir</div>
+<p style="margin-top:8px;"><strong>1. Mon style d'écriture (à créer toi-même)</strong></p>
 <ul><li><strong>Nom</strong> : mon-style</li>
 <li><strong>Description</strong> : "À utiliser pour tout contenu que je demande : posts, emails, articles, messages."</li>
 <li><strong>Instructions</strong> : "Mon style : phrases courtes, ton direct, pas de jargon corporate. Je tutoie. Je commence toujours par le concret, jamais par une question rhétorique. Pas de listes à puces quand une phrase suffit. Vocabulaire simple, impact maximal."</li></ul>
-<p style="margin-top:10px;"><strong>2. Mon client idéal</strong></p>
-<ul><li><strong>Nom</strong> : profil-client</li>
-<li><strong>Description</strong> : "À utiliser quand je travaille sur du contenu marketing, de la prospection, ou une offre commerciale."</li>
-<li><strong>Instructions</strong> : "Mon client idéal : DRH de PME industrielle, 50-200 salariés. Problèmes : turnover élevé, difficulté à recruter, pas de process RH structuré. Ce qui le freine : méfiance envers les consultants, budget serré, besoin de résultats rapides. Ce qui le convainc : des exemples concrets, des chiffres, un ton pragmatique."</li></ul>
-<p style="margin-top:10px;"><strong>3. Compte-rendu de réunion</strong></p>
-<ul><li><strong>Nom</strong> : compte-rendu-reunion</li>
-<li><strong>Description</strong> : "À utiliser quand je partage des notes de réunion ou que je demande un compte-rendu."</li>
-<li><strong>Instructions</strong> : "Structure toujours en 4 parties : Décisions prises / Actions (responsable + deadline) / Points en suspens / Prochaine étape. Ton professionnel. Maximum 1 page. Commence directement par les décisions, pas par un résumé de qui était présent."</li></ul></div>
+<p style="margin-top:12px;"><strong>2. Co-rédaction de documents (répertoire officiel)</strong></p>
+<ul><li><strong>Nom</strong> : doc-coauthoring</li>
+<li><strong>S'active quand</strong> : tu veux rédiger une proposition, un rapport, une spec, un document structuré.</li>
+<li><strong>Ce que ça fait</strong> — un workflow en 3 étapes :<br>
+① <em>Collecte de contexte</em> : Claude te pose 5 à 10 questions, tu vides tout ce que tu sais (en vrac, c'est le but).<br>
+② <em>Rédaction section par section</em> : pour chaque partie, Claude brainstorme des idées, tu choisis, il rédige, tu affines.<br>
+③ <em>Test lecteur</em> : Claude relit le document comme quelqu'un qui le découvre — et corrige ce qui n'est pas clair.</li>
+<li><strong>Où le trouver</strong> : Personnaliser → Compétences → Exemples.</li></ul>
+<p style="margin-top:12px;"><strong>3. Communications internes (répertoire officiel)</strong></p>
+<ul><li><strong>Nom</strong> : internal-comms</li>
+<li><strong>S'active quand</strong> : tu rédiges une communication interne — update d'équipe, newsletter, FAQ, rapport d'incident, update projet.</li>
+<li><strong>Ce que ça fait</strong> : Claude adapte automatiquement le format selon le type de communication. Un update 3P (Progression / Prochaines étapes / Problèmes), une newsletter, une FAQ… Chaque type suit un template spécifique.</li>
+<li><strong>Où le trouver</strong> : Personnaliser → Compétences → Exemples.</li></ul>
+<p style="margin-top:10px;font-size:14px;color:#444;">L'exemple 1 est à créer toi-même (c'est ta voix, personne ne peut le faire à ta place). Les exemples 2 et 3 sont prêts à l'emploi — active-les en un clic.</p></div>
 <div class="encadre bleu" style="margin-top:12px;"><div class="encadre-title">📁 Compétences vs Projets — ne pas confondre</div>
 <table class="tableau"><tr><th></th><th>Projets</th><th>Compétences</th></tr>
 <tr><td>Quand ça s'active</td><td>Toujours (dans le projet)</td><td>Dynamiquement (quand Claude le juge utile)</td></tr>
