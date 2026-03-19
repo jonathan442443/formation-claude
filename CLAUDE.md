@@ -25,8 +25,8 @@ Formation/
 │   ├── m00-bienvenue.js    ← export default { partie, num, sections[], recap }
 │   ├── m01-cest-quoi-claude.js
 │   ├── ...
-│   └── m14-ethique.js
-├── sources/                ← notes de recherche internes (cours Anthropic, 4D Framework) — pas publié
+│   └── m13-ethique.js
+├── sources/                ← notes de recherche internes (cours Anthropic, 4D Framework, monétisation, éthique) — pas publié
 └── CLAUDE.md
 ```
 
@@ -39,8 +39,7 @@ Formation/
 
 - `PARTIES[]` : 4 parties thématiques (Rassurer, Comprendre, Pratiquer, Monétiser), chacune avec label, titre, couleurs
 - `MODULES[]` : chaque module contient `{partie, num, locked, titre, sub, duree, niv, sections[], recap}`. Les sections ont `{lbl, titre, html}` (contenu HTML brut). La récap contient `{points[], prompt?}` — le prompt est présent dans tous les modules sauf les locked
-- Modules 13 et 14 sont marqués `locked: true` avec `sections: []` — contenu à venir
-- Le module "Automatiser son travail" (workflows, agents) n'a pas encore été créé
+- Tous les modules sont débloqués (`locked: false`) avec du contenu complet
 
 ### Navigation
 
@@ -49,7 +48,7 @@ Formation/
 - `buildIndex()` : construit la grille d'index sur la page d'accueil
 - `updateNav()` / `updateProgress()` : mise à jour de la barre de navigation et de progression
 
-## Structure de la formation (15 modules, 4 parties)
+## Structure de la formation (14 modules, 4 parties)
 
 ### 🟦 Partie 1 — Rassurer (M0 à M2)
 - M0 : Bienvenue — premier contact avec Claude
@@ -58,7 +57,7 @@ Formation/
 
 ### 🟠 Partie 2 — Comprendre (M3 à M6)
 - M3 : Le prompt (méthode RCTF) — Rôle, Contexte, Tâche, Format + itération avec le pourquoi
-- M4 : Techniques avancées — few-shot, pourquoi, chaînage, comportement de Claude, auto-critique (5 techniques)
+- M4 : Fais parler Claude comme toi — few-shot, pourquoi, chaînage, comportement de Claude, auto-critique (5 techniques)
 - M5 : Projets et Artéfacts — organiser et créer des documents réutilisables
 - M6 : Compétences et Connecteurs — Skills intégrées (Excel/Word/PPT/PDF), compétences perso, répertoire officiel (doc-coauthoring, internal-comms), connecteurs multi-outils
 
@@ -69,10 +68,9 @@ Formation/
 - M10 : Créer une mini-app sans coder — calculateur, quiz, dashboard via Artéfacts (stockage persistant = plans payants uniquement)
 - M11 : Créer une landing page sans coder — page pro pour ton offre, structure 7 blocs
 
-### 🟣 Partie 4 — Monétiser (M12 à M14)
-- M12 : Les opportunités pour gagner de l'argent — 5 pistes concrètes
-- M13 : Comment se lancer concrètement (locked)
-- M14 : Éthique et bonnes pratiques (locked)
+### 🟣 Partie 4 — Monétiser (M12 à M13)
+- M12 : Les opportunités pour gagner de l'argent — 5 pistes sourcées (Upwork, EU AI Act, Anthropic), ton honnête, écosystème Anthropic (Academy, Partner Network)
+- M13 : Avant de foncer : les risques à connaître — hallucinations (cas réels), données/vie privée, transparence client, droit d'auteur IA, EU AI Act, RGPD, checklist 10 réflexes
 
 ## Design System
 
@@ -112,5 +110,5 @@ Composants réutilisables :
 - Les Compétences s'appellent "Skills" en anglais dans la doc Anthropic — utiliser "Compétences" en français (terme de l'interface)
 - Sources officielles pour vérifier les fonctionnalités : https://www.anthropic.com/learn/claude-for-you, https://claude.com/resources/tutorials, https://github.com/anthropics/skills
 - Le comparatif Claude vs ChatGPT a été retiré du M1 (infos trop volatiles) — ne pas le remettre sans vérification en ligne
-- Le dossier `sources/` contient des notes de recherche issues des cours Anthropic (4D Framework, Skills) — référence interne, pas publié sur le site
+- Le dossier `sources/` contient des notes de recherche (cours Anthropic, 4D Framework, Skills, quickstarts, monétisation, éthique IA) — référence interne, pas publié sur le site
 - Modèles actuels (mars 2026) : Haiku 4.5, Sonnet 4.6 (17 fév 2026), Opus 4.6 (5 fév 2026) — vérifier avant chaque mise à jour
