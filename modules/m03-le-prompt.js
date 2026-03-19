@@ -21,7 +21,11 @@ sections:[
 <li>"Trop long ? → <em>Raccourcis en 3 phrases max.</em>"</li>
 <li>"Ton pas bon ? → <em>Reformule plus décontracté.</em>"</li>
 <li>"Tu veux plusieurs options ? → <em>Donne-moi 3 versions différentes.</em>"</li>
-<li>"Pas assez précis ? → <em>Ajoute des chiffres et un exemple concret.</em>"</li></ul></div>`},
+<li>"Pas assez précis ? → <em>Ajoute des chiffres et un exemple concret.</em>"</li></ul>
+<p style="margin-top:10px;"><strong>L'astuce qui change tout :</strong> quand tu corriges, explique <em>pourquoi</em>. Claude retient le raisonnement et s'en sert pour la suite.</p>
+<div class="comparatif" style="margin-top:10px;">
+<div class="comp-card mauvais"><div class="comp-title">❌ Correction sèche</div><p>"Trop long. Raccourcis."</p></div>
+<div class="comp-card bon"><div class="comp-title">✅ Correction avec le pourquoi</div><p>"Trop long — mon client est un DRH débordé, il ne lira pas au-delà de 3 lignes. Raccourcis en gardant uniquement ce qui le fait agir."</p></div></div></div>`},
 {lbl:"✏️ Exercice",titre:"RCTF en action",html:`<div class="encadre orange"><div class="encadre-title">🎯 Exercice — 15 min</div>
 <p><strong>Étape 1 — Le prompt vague (2 min)</strong></p>
 <p>Envoie à Claude : <em>"Rédige un email."</em> Lis la réponse. Note ce qui ne va pas.</p>
