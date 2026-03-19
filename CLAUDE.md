@@ -52,12 +52,12 @@ Formation/
 
 ### 🟦 Partie 1 — Rassurer (M0 à M2)
 - M0 : Bienvenue — premier contact avec Claude
-- M1 : C'est quoi Claude — forces, limites, comparatif ChatGPT, 3 modèles (Haiku/Sonnet/Opus)
+- M1 : C'est quoi Claude — forces, limites, 3 modèles (Haiku 4.5/Sonnet 4.6/Opus 4.6), quota
 - M2 : Prendre Claude en main — interface, barre latérale, zone de chat
 
 ### 🟠 Partie 2 — Comprendre (M3 à M6)
-- M3 : Le prompt (méthode RCTF) — Rôle, Contexte, Tâche, Format
-- M4 : Techniques avancées — few-shot, pourquoi, chaînage, auto-critique
+- M3 : Le prompt (méthode RCTF) — Rôle, Contexte, Tâche, Format + itération avec le pourquoi
+- M4 : Techniques avancées — few-shot, pourquoi, chaînage, comportement de Claude, auto-critique (5 techniques)
 - M5 : Projets et Artéfacts — organiser et créer des documents réutilisables
 - M6 : Compétences et Connecteurs — Skills intégrées (Excel/Word/PPT/PDF), compétences perso, répertoire officiel (doc-coauthoring, internal-comms), connecteurs multi-outils
 
@@ -65,7 +65,7 @@ Formation/
 - M7 : Claude au quotidien — combiner tous les outils sur des tâches réelles
 - M8 : Créer du contenu qui te ressemble — analyse de style, recyclage multi-format
 - M9 : Analyser et transformer des données — Excel, CSV, PDF, génération de documents Office
-- M10 : Créer une mini-app sans coder — calculateur, quiz, dashboard via Artéfacts
+- M10 : Créer une mini-app sans coder — calculateur, quiz, dashboard via Artéfacts (stockage persistant = plans payants uniquement)
 - M11 : Créer une landing page sans coder — page pro pour ton offre, structure 7 blocs
 
 ### 🟣 Partie 4 — Monétiser (M12 à M14)
@@ -110,3 +110,6 @@ Composants réutilisables :
 - Les fonctionnalités décrites doivent être accessibles sur le plan gratuit de Claude (sauf mention explicite)
 - Les Compétences s'appellent "Skills" en anglais dans la doc Anthropic — utiliser "Compétences" en français (terme de l'interface)
 - Sources officielles pour vérifier les fonctionnalités : https://www.anthropic.com/learn/claude-for-you, https://claude.com/resources/tutorials, https://github.com/anthropics/skills
+- Le comparatif Claude vs ChatGPT a été retiré du M1 (infos trop volatiles) — ne pas le remettre sans vérification en ligne
+- Le dossier `sources/` contient des notes de recherche issues des cours Anthropic (4D Framework, Skills) — référence interne, pas publié sur le site
+- Modèles actuels (mars 2026) : Haiku 4.5, Sonnet 4.6 (17 fév 2026), Opus 4.6 (5 fév 2026) — vérifier avant chaque mise à jour
