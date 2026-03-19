@@ -1,0 +1,1 @@
+export default {partie:3,num:13,locked:true,titre:"Comment se lancer concrètement",sub:"Bientôt disponible — Construire son offre, fixer ses tarifs, trouver ses premiers clients.",duree:"25 min",niv:"Tous niveaux",sections:[],recap:null};
