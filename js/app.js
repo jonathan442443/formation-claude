@@ -60,7 +60,6 @@ function buildPage(m){
           <h1 class="module-hero-title">${m.titre}</h1>
           <p class="module-hero-desc">${m.sub}</p>
           <div class="module-meta-bar">
-            <span class="meta-tag" style="background:rgba(245,166,35,0.2);color:var(--orange);font-weight:600;">${m.duree}</span>
             <span class="meta-tag" style="background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.7);">${m.niv}</span>
           </div>
         </div>
@@ -100,7 +99,6 @@ function buildIndex(){
           <div class="module-title">${m.titre}</div>
           <div class="module-subtitle">${m.sub}</div>
           <div class="module-meta">
-            <span class="meta-tag" style="background:${p.bg};color:${p.color};">${m.duree}</span>
             ${m.locked?'<span class="meta-tag" style="background:#FFF3E0;color:#e65100;">Bientôt</span>':`<span class="meta-tag" style="background:#F0F0F0;color:#666;">${m.niv}</span>`}
           </div>
         </div>

@@ -9,7 +9,7 @@ sections:[
 <tr><td>🟠 Comprendre</td><td>Tu maîtrises les prompts et les fonctionnalités</td><td>3 à 6</td></tr>
 <tr><td>🟢 Pratiquer</td><td>Tu utilises Claude sur des cas concrets du quotidien</td><td>7 à 11</td></tr>
 <tr><td>🟣 Monétiser</td><td>Tu transformes tes compétences en opportunités de revenus</td><td>12 à 13</td></tr></table>
-<p class="block-text" style="margin-top:16px;">Au total : <strong>14 modules</strong>, ~25 minutes chacun. À ton rythme, quand tu veux.</p>`},
+<p class="block-text" style="margin-top:16px;">Au total : <strong>14 modules</strong>, environ 5h30 de formation. À ton rythme, quand tu veux.</p>`},
 {lbl:"⚙️ Méthode",titre:"Comment suivre cette formation",html:`<div class="encadre vert"><div class="encadre-title">✅ Les bonnes pratiques</div><ul>
 <li>Ouvre claude.ai dans un autre onglet — c'est gratuit, aucune carte bancaire nécessaire.</li>
 <li>Lis chaque module avec Claude ouvert à côté — <em>pendant</em>, pas après.</li>
