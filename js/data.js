@@ -11,8 +11,7 @@ import m09 from '../modules/m09-analyser-donnees.js';
 import m10 from '../modules/m10-mini-app.js';
 import m11 from '../modules/m11-landing-page.js';
 import m12 from '../modules/m12-opportunites.js';
-import m13 from '../modules/m13-se-lancer.js';
-import m14 from '../modules/m14-ethique.js';
+import m13 from '../modules/m13-ethique.js';
 
 export const PARTIES = [
   {label:"Partie 1",titre:"Rassurer",bg:"#EBF5FB",color:"#1B4F8A"},
@@ -21,4 +20,4 @@ export const PARTIES = [
   {label:"Partie 4",titre:"Monétiser",bg:"#EBD5F5",color:"#6C3483"},
 ];
 
-export const MODULES = [m00, m01, m02, m03, m04, m05, m06, m07, m08, m09, m10, m11, m12, m13, m14];
+export const MODULES = [m00, m01, m02, m03, m04, m05, m06, m07, m08, m09, m10, m11, m12, m13];

@@ -1,1 +1,0 @@
-export default {partie:3,num:14,locked:true,titre:"Éthique et bonnes pratiques",sub:"Bientôt disponible — Hallucinations, droits d'auteur, confidentialité.",duree:"25 min",niv:"Tous niveaux",sections:[],recap:null};
