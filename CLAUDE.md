@@ -4,7 +4,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Site de formation gratuit en français : **"Maîtriser Claude de A à Z"**. SPA statique multi-fichiers — ES modules, aucun build, aucun framework. Déploiement cible : GitHub Pages.
+Site de formation gratuit en français : **"Maîtriser Claude de A à Z"**. SPA statique multi-fichiers — ES modules, aucun build, aucun framework.
+
+- **Repo** : `jonathan442443/formation-claude`
+- **En ligne** : https://jonathan442443.github.io/formation-claude/
+- **Déploiement** : GitHub Pages (branche `master`, dossier `/`)
+- **Workflow** : modifier → `git commit` → `git push` → site mis à jour (~30s)
 
 ## Architecture
 
@@ -27,7 +32,7 @@ Formation/
 - **CSS** (`css/style.css`) : variables CSS dans `:root`, design responsive (breakpoint 768px), thème éditorial avec typographie Playfair Display + DM Sans (Google Fonts)
 - **JS** (`js/app.js`) : navigation par pages (`div.page` avec toggle `.active`), rendu dynamique des modules via `buildPage()` et `buildIndex()`. Fonctions exposées sur `window` pour les `onclick` inline.
 - **Données** (`js/data.js` + `modules/*.js`) : chaque module est un fichier ES module séparé (export default). `data.js` les importe tous et exporte `PARTIES[]` et `MODULES[]`.
-- **Serveur requis** : les ES modules (`import`/`export`) nécessitent un serveur HTTP (Live Server, `npx serve`, etc.) — pas de double-clic `file://`.
+- **Serveur requis en local** : les ES modules (`import`/`export`) nécessitent un serveur HTTP (`npx serve` ou Live Server dans VS Code) — pas de double-clic `file://`.
 
 ### Structure des données
 
@@ -47,14 +52,14 @@ Formation/
 
 ### 🟦 Partie 1 — Rassurer (M0 à M2)
 - M0 : Bienvenue — premier contact avec Claude
-- M1 : C'est quoi Claude — forces, limites, comparatif ChatGPT
+- M1 : C'est quoi Claude — forces, limites, comparatif ChatGPT, 3 modèles (Haiku/Sonnet/Opus)
 - M2 : Prendre Claude en main — interface, barre latérale, zone de chat
 
 ### 🟠 Partie 2 — Comprendre (M3 à M6)
 - M3 : Le prompt (méthode RCTF) — Rôle, Contexte, Tâche, Format
 - M4 : Techniques avancées — few-shot, pourquoi, chaînage, auto-critique
 - M5 : Projets et Artéfacts — organiser et créer des documents réutilisables
-- M6 : Compétences et Connecteurs — règles automatiques et accès aux outils
+- M6 : Compétences et Connecteurs — Skills intégrées (Excel/Word/PPT/PDF), compétences perso, répertoire officiel (doc-coauthoring, internal-comms), connecteurs multi-outils
 
 ### 🟢 Partie 3 — Pratiquer (M7 à M11)
 - M7 : Claude au quotidien — combiner tous les outils sur des tâches réelles
@@ -103,3 +108,5 @@ Composants réutilisables :
 - Les exercices doivent produire un résultat **utilisable aujourd'hui** par l'apprenant
 - Les prompts doivent utiliser les techniques enseignées dans les modules précédents (pas de régression vers du RCTF basique après le Module 4)
 - Les fonctionnalités décrites doivent être accessibles sur le plan gratuit de Claude (sauf mention explicite)
+- Les Compétences s'appellent "Skills" en anglais dans la doc Anthropic — utiliser "Compétences" en français (terme de l'interface)
+- Sources officielles pour vérifier les fonctionnalités : https://www.anthropic.com/learn/claude-for-you, https://claude.com/resources/tutorials, https://github.com/anthropics/skills
