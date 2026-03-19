@@ -821,6 +821,41 @@ body {
   background:var(--bleu-sombre);
 }
 
+.site-footer {
+  background:var(--bleu-sombre);
+  text-align:center;
+  padding:40px 24px;
+  border-top:1px solid rgba(255,255,255,0.1);
+}
+
+.footer-name {
+  font-family:'Playfair Display', serif;
+  font-size:18px;
+  font-weight:700;
+  color:#fff;
+  margin:0;
+}
+
+.footer-role {
+  font-family:'DM Sans', sans-serif;
+  font-size:14px;
+  color:rgba(255,255,255,0.6);
+  margin:6px 0 16px;
+}
+
+.footer-link {
+  font-family:'DM Sans', sans-serif;
+  font-size:14px;
+  color:var(--orange);
+  text-decoration:none;
+  font-weight:600;
+  transition:opacity 0.2s;
+}
+
+.footer-link:hover {
+  opacity:0.8;
+}
+
 @media(max-width:768px) {
   .site-nav {
     padding:10px 16px;
