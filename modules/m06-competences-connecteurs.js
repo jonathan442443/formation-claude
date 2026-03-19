@@ -1,8 +1,9 @@
 export default {partie:1,num:6,locked:false,titre:"Compétences et Connecteurs",sub:"Apprends à Claude ta façon de travailler et connecte-le à tes outils.",duree:"25 min",niv:"Débutant",
 sections:[
 {lbl:"🎯 Accroche",titre:"Claude travaille comme toi — automatiquement",html:`<p class="block-text">Avec les Projets, Claude connaît le contexte de chaque sujet. Mais tes préférences générales — ton style d'écriture, tes formats préférés, tes habitudes — tu dois les réécrire dans chaque Projet.</p>
-<p class="block-text">Les Compétences règlent ça : tu définis tes règles une fois, Claude les applique partout. Les Connecteurs vont encore plus loin : Claude accède directement à tes outils — Gmail, Drive, Calendar — pour travailler avec tes vraies données.</p>`},
-{lbl:"👜 Compétences",titre:"Apprends à Claude tes règles",html:`<p class="block-text">Une Compétence, c'est un ensemble d'instructions que Claude applique automatiquement quand il reconnaît le contexte. Tu ne lui dis pas "utilise telle compétence" — il le fait tout seul.</p>
+<p class="block-text">Les Compétences règlent ça : tu définis tes règles une fois, Claude les applique partout. Les Connecteurs vont encore plus loin : Claude accède directement à tes outils — Gmail, Drive, Calendar — pour travailler avec tes vraies données.</p>
+<div class="encadre vert"><div class="encadre-title">💡 Bonne nouvelle</div><p>Avant même de créer tes propres Compétences, Claude est livré avec des Compétences intégrées qui s'activent automatiquement : création de fichiers <strong>Excel</strong>, <strong>Word</strong>, <strong>PowerPoint</strong> et <strong>PDF</strong>. Demande simplement "Crée-moi un Excel de suivi budgétaire" — Claude sait déjà comment faire. Prérequis : vérifie que l'exécution de code est activée dans Paramètres → Capacités.</p></div>`},
+{lbl:"👜 Compétences",titre:"Apprends à Claude tes règles",html:`<p class="block-text">Une Compétence (aussi appelée <em>Skill</em> dans la communauté), c'est un ensemble d'instructions que Claude charge dynamiquement quand il reconnaît le contexte. Tu ne lui dis pas "utilise telle compétence" — il le fait tout seul.</p>
 <p class="block-text">Exemple : tu crées une compétence "Emails professionnels". À chaque fois que tu demandes un email, Claude applique tes règles — sans que tu les répètes.</p>
 <div class="encadre bleu"><div class="encadre-title">Comment y accéder</div><p>Barre gauche → Personnaliser (👜) → Compétences</p><ul>
 <li><strong>Mes compétences</strong> — celles que tu as créées (activables/désactivables via un toggle)</li>
@@ -25,7 +26,14 @@ sections:[
 <p style="margin-top:10px;"><strong>3. Compte-rendu de réunion</strong></p>
 <ul><li><strong>Nom</strong> : compte-rendu-reunion</li>
 <li><strong>Description</strong> : "À utiliser quand je partage des notes de réunion ou que je demande un compte-rendu."</li>
-<li><strong>Instructions</strong> : "Structure toujours en 4 parties : Décisions prises / Actions (responsable + deadline) / Points en suspens / Prochaine étape. Ton professionnel. Maximum 1 page. Commence directement par les décisions, pas par un résumé de qui était présent."</li></ul></div>`},
+<li><strong>Instructions</strong> : "Structure toujours en 4 parties : Décisions prises / Actions (responsable + deadline) / Points en suspens / Prochaine étape. Ton professionnel. Maximum 1 page. Commence directement par les décisions, pas par un résumé de qui était présent."</li></ul></div>
+<div class="encadre bleu" style="margin-top:12px;"><div class="encadre-title">📁 Compétences vs Projets — ne pas confondre</div>
+<table class="tableau"><tr><th></th><th>Projets</th><th>Compétences</th></tr>
+<tr><td>Quand ça s'active</td><td>Toujours (dans le projet)</td><td>Dynamiquement (quand Claude le juge utile)</td></tr>
+<tr><td>Ce que c'est</td><td>Du contexte (qui tu es, tes fichiers)</td><td>Des instructions (comment faire une tâche)</td></tr>
+<tr><td>Portée</td><td>Un sujet précis</td><td>Toutes tes conversations</td></tr></table>
+<p style="margin-top:10px;font-size:14px;color:#444;">En résumé : le Projet dit à Claude <strong>sur quoi</strong> tu travailles. La Compétence lui dit <strong>comment</strong> travailler.</p></div>
+<div class="encadre orange" style="margin-top:12px;"><div class="encadre-title">🧩 Le répertoire de Compétences</div><p>En plus de tes propres créations, il existe un répertoire de Compétences professionnelles prêtes à l'emploi — créées par des partenaires comme Notion, Figma ou Atlassian. Tu peux les découvrir dans Personnaliser → Compétences → section "Exemples".</p></div>`},
 {lbl:"🔌 Connecteurs",titre:"Claude accède à tes vrais outils",html:`<p class="block-text">Les Connecteurs permettent à Claude d'accéder à tes applications — pour lire tes emails, consulter ton agenda, chercher dans tes documents. Tu lui parles, il va chercher l'info dans tes outils.</p>
 <div class="encadre bleu"><div class="encadre-title">Connecter un outil — pas à pas</div><ol style="padding-left:16px;display:flex;flex-direction:column;gap:6px;">
 <li style="font-size:14px;color:#444;">Clique sur le bouton + → "Parcourir les connecteurs"</li>
@@ -40,7 +48,14 @@ sections:[
 <tr><td>Google Calendar</td><td>Consulter ton agenda, créer et modifier des événements</td></tr>
 <tr><td>Google Drive</td><td>Lire tes documents, sauvegarder des fichiers créés par Claude</td></tr>
 <tr><td>Notion</td><td>Chercher, lire et mettre à jour tes pages Notion</td></tr>
-<tr><td>Slack</td><td>Lire des messages, créer des résumés de canaux</td></tr></table></div>
+<tr><td>Slack</td><td>Lire des messages, créer des résumés de canaux</td></tr>
+<tr><td>Asana</td><td>Créer des tâches, suivre l'avancement d'un projet</td></tr>
+<tr><td>Canva</td><td>Créer des designs à partir de tes instructions</td></tr></table></div>
+<div class="encadre vert" style="margin-top:12px;"><div class="encadre-title">⚡ Combos multi-outils</div><p>La vraie puissance des connecteurs, c'est de les combiner :</p><ul>
+<li><strong>Notes + Asana</strong> : "Transforme mes notes de réunion en tâches assignées dans Asana"</li>
+<li><strong>Drive + Gmail</strong> : "Lis le rapport sur mon Drive et rédige un email de synthèse"</li>
+<li><strong>Calendar + Gmail</strong> : "Regarde mon planning de demain et propose un email de confirmation pour chaque rendez-vous"</li></ul>
+<p style="margin-top:8px;">Astuce : sois spécifique sur l'outil visé. Commence ta demande par <em>"En utilisant Google Drive, trouve…"</em> — Claude saura exactement où chercher.</p></div>
 <div class="encadre rouge" style="margin-top:12px;"><div class="encadre-title">⚠️ Confidentialité</div><p>Tes données ne sont pas partagées. Tu gardes le contrôle. Tu peux déconnecter un outil à tout moment (bouton "Déconnecter"). Claude ne peut pas agir sans ton approbation — par exemple, il crée des brouillons d'emails mais ne les envoie pas.</p></div>`},
 {lbl:"✏️ Exercice",titre:"Configure tes règles et tes outils",html:`<div class="encadre orange"><div class="encadre-title">🎯 Exercice — 15 min</div>
 <p><strong>Étape 1 — Crée ta première Compétence (8 min)</strong></p>
@@ -54,4 +69,4 @@ sections:[
 <p style="margin-top:14px;"><strong>Étape 3 — Explore les exemples (2 min)</strong></p>
 <p>Retourne dans Compétences. Parcours la section "Exemples" : brand-guidelines, doc-coauthoring, internal-comms… Clique sur celles qui t'intéressent pour voir comment elles sont construites.</p></div>`}
 ],
-recap:{points:["Les Compétences sont des règles permanentes que Claude applique automatiquement — sans que tu les mentionnes. La clé : une description précise pour que Claude sache quand les activer.","Les Connecteurs branchent Claude à tes outils (Gmail, Calendar, Notion, Slack…). Plus de 50 intégrations vérifiées par Anthropic, gratuites, déconnectables à tout moment.","Compétences = comment Claude travaille. Connecteurs = avec quoi il travaille. Les deux combinés transforment Claude en vrai assistant personnalisé."]}};
+recap:{points:["Les Compétences sont des instructions que Claude active dynamiquement selon la tâche. Les Compétences Anthropic (Excel, Word, PowerPoint, PDF) fonctionnent déjà sans configuration. Tes Compétences personnalisées complètent le tout.","Les Connecteurs branchent Claude à tes outils (Gmail, Calendar, Notion, Slack…). Des dizaines d'intégrations vérifiées par Anthropic, gratuites, déconnectables à tout moment.","Compétences = comment Claude travaille. Connecteurs = avec quoi il travaille. Les deux combinés transforment Claude en vrai assistant personnalisé."]}};
