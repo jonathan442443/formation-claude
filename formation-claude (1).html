@@ -488,68 +488,97 @@ sections:[
 ],
 recap:{points:["Un prompt isolé donne un résultat correct. Un système configuré (Projet + Compétences + Connecteurs + chaînage) donne un résultat sur mesure en 30 secondes.","Pour chaque tâche récurrente, la question à se poser : est-ce que j'ai une Compétence pour ça ? Un Connecteur ? Si non, crée-les maintenant.","L'auto-critique (\"relis comme si tu étais le destinataire\") transforme un bon résultat en résultat excellent — à chaque fois."]}},
 
-{partie:2,num:8,locked:false,titre:"Claude comme assistant créatif",sub:"Créer du contenu qui te ressemble vraiment, pas le style générique de l'IA.",duree:"25 min",niv:"Débutant",
+{partie:2,num:8,locked:false,titre:"Créer du contenu qui te ressemble",sub:"Capture ton style, recycle tes idées, publie sans effort.",duree:"25 min",niv:"Intermédiaire",
 sections:[
-{lbl:"🎯 Accroche",titre:"Le piège à éviter",html:`<p class="block-text">Tu l'as sûrement déjà lu sur LinkedIn : les posts qui commencent par une question rhétorique, enchaînent sur 5 points avec des emojis, et finissent par "Et toi, qu'en penses-tu ?"</p>
-<p class="block-text">C'est le contenu Claude par défaut. Pas mauvais. Juste sans âme. Ce module t'apprend à éviter ce piège.</p>`},
-{lbl:"💡 Notion clé",titre:"Apprendre ton style à Claude",html:`<div class="encadre bleu"><div class="encadre-title">🎭 La technique fondamentale — 4 étapes</div><ul>
-<li><strong>Étape 1</strong> — "Voici 3 textes que j'ai écrits. Analyse mon style en 5 points précis : vocabulaire, structures de phrases, ton, habitudes."</li>
-<li><strong>Étape 2</strong> — Claude décrit ton style. Corrige ce qui est faux.</li>
-<li><strong>Étape 3</strong> — "Écris [contenu] sur [sujet] en respectant exactement ce style."</li>
-<li><strong>Étape 4</strong> — Ajoute la description dans les instructions de ton Projet. Claude l'applique désormais automatiquement.</li></ul></div>
-<div class="encadre orange" style="margin-top:12px;"><div class="encadre-title">📱 Posts LinkedIn</div><ul>
-<li><em>"Dans mon style [description]. Post LinkedIn sur [sujet]. Accroche percutante sur la 1ère ligne. Max 1 300 caractères."</em></li>
-<li><em>"Propose-moi 5 versions différentes de l'accroche pour ce post."</em></li></ul></div>
-<div class="encadre vert" style="margin-top:12px;"><div class="encadre-title">🔄 La stratégie de recyclage</div><p>Un article → Claude le transforme en : 3 posts LinkedIn, 1 newsletter, 1 script de 5 min, 1 résumé en bullets. <strong>Un seul effort, cinq formats.</strong></p></div>`},
-{lbl:"👀 Exemple",titre:"Articles et brainstorming",html:`<div class="encadre bleu"><div class="encadre-title">📝 Méthode pour un article de qualité</div>
-<table class="tableau"><tr><th>Étape</th><th>Prompt</th></tr>
-<tr><td>1. L'angle</td><td>"Propose 5 angles dont 2 contre-intuitifs."</td></tr>
-<tr><td>2. Le plan</td><td>"Crée un plan détaillé avec sections et transitions."</td></tr>
-<tr><td>3. Rédaction</td><td>"Écris la section [X] dans mon style. [N] mots. Sans intro générique."</td></tr>
-<tr><td>4. Relecture</td><td>"Identifie les passages génériques et propose des améliorations."</td></tr></table></div>
-<div class="encadre violet" style="margin-top:12px;"><div class="encadre-title">💡 Anti-page-blanche</div><ul>
+{lbl:"🎯 Accroche",titre:"Le piège à éviter",html:`<p class="block-text">Au module précédent, tu as créé un post en 5 minutes. Mais si tu publies régulièrement, un post ne suffit pas — il te faut un système.</p>
+<p class="block-text">Tu l'as sûrement déjà vu : ces posts IA qui commencent par une question rhétorique, enchaînent sur 5 points avec des emojis, et finissent par "Et toi, qu'en penses-tu ?" Pas mauvais. Juste sans âme.</p>
+<p class="block-text">Ce module t'apprend à faire l'inverse : capturer ton style une fois pour toutes, et produire n'importe quel format — article, post, newsletter, script — avec ta voix, à chaque fois.</p>`},
+{lbl:"💡 Notion clé",titre:"Capture ton style, produis sans limites",html:`<div class="encadre bleu"><div class="encadre-title">🎭 Capturer ton style — 4 étapes</div><ol style="padding-left:16px;display:flex;flex-direction:column;gap:6px;">
+<li style="font-size:14px;color:#444;">Trouve 2-3 textes que tu as écrits et dont tu es fier. Envoie-les à Claude : <em>"Voici des textes que j'ai écrits. Analyse mon style en 5 points précis : vocabulaire, structures de phrases, ton, rythme, ce qui me distingue d'un style générique."</em></li>
+<li style="font-size:14px;color:#444;">Claude décrit ton style. Lis attentivement — corrige ce qui est faux, précise ce qui manque.</li>
+<li style="font-size:14px;color:#444;">Teste : <em>"Écris un paragraphe sur [sujet] en respectant exactement ce style."</em> Si ça ne sonne pas comme toi, ajuste.</li>
+<li style="font-size:14px;color:#444;">Une fois satisfait, crée une Compétence "mon-style" avec cette description. Claude l'appliquera automatiquement dans toutes tes conversations — pas seulement dans un Projet.</li></ol></div>
+<div class="encadre orange" style="margin-top:12px;"><div class="encadre-title">🔄 Le recyclage : 1 contenu → 5 formats</div>
+<p>Tu as écrit un article, une présentation, ou même un simple email détaillé. Claude le transforme en plusieurs formats :</p>
+<table class="tableau" style="margin-top:10px;"><tr><th>Input</th><th>→ Demande</th><th>Output</th></tr>
+<tr><td>Un article de blog</td><td>"Transforme en post pour les réseaux sociaux"</td><td>Post de 1 300 caractères avec accroche</td></tr>
+<tr><td>Le même article</td><td>"Transforme en newsletter"</td><td>Email structuré avec intro personnelle</td></tr>
+<tr><td>Le même article</td><td>"Extrais les 5 idées clés en bullets"</td><td>Résumé partageable</td></tr>
+<tr><td>Le même article</td><td>"Transforme en fil de discussion"</td><td>Thread en 7 messages progressifs</td></tr>
+<tr><td>Le même article</td><td>"Crée un prompt pour générer une image qui illustre cet article avec une IA comme Grok ou DALL-E"</td><td>Prompt visuel détaillé, prêt à copier-coller</td></tr></table>
+<p style="margin-top:10px;">Un seul effort de réflexion. Cinq contenus publiables. Ta Compétence "mon-style" s'applique à chaque format automatiquement.</p></div>`},
+{lbl:"👀 En pratique",titre:"D'une idée brute à un article publié",html:`<div class="encadre bleu"><div class="encadre-title">📝 Méthode en 5 étapes</div>
+<p style="margin-top:8px;"><strong>Étape 1 — Trouver l'angle</strong></p>
+<p><em>"Sur le thème [sujet], propose 5 angles dont 2 contre-intuitifs et 1 qui contredit l'opinion dominante."</em></p>
+<p style="margin-top:10px;"><strong>Étape 2 — Valider avec une recherche</strong></p>
+<p><em>"Cherche en ligne ce qui a déjà été publié sur cet angle. Qu'est-ce qui manque dans les articles existants ? C'est là que je dois apporter de la valeur."</em></p>
+<p style="margin-top:10px;"><strong>Étape 3 — Structurer</strong></p>
+<p><em>"Crée un plan détaillé : intro (accroche + promesse), 3-4 sections avec transitions, conclusion avec appel à l'action."</em></p>
+<p style="margin-top:10px;"><strong>Étape 4 — Rédiger section par section</strong></p>
+<p><em>"Écris la section [X]. [N] mots. Sans intro générique. Commence directement par l'idée forte."</em><br>Ne demande jamais "écris l'article entier" — toujours section par section.</p>
+<p style="margin-top:10px;"><strong>Étape 5 — Auto-critique ciblée</strong></p>
+<p><em>"Relis l'article complet. Identifie : les passages qui sonnent 'IA', les transitions faibles, les affirmations sans preuve. Propose une correction pour chacun."</em></p></div>
+<div class="encadre violet" style="margin-top:12px;"><div class="encadre-title">💡 Anti-page-blanche</div><p>Tu ne sais pas sur quoi écrire ?</p><ul>
 <li><em>"Génère 20 idées sur [thème], dont certaines contre-intuitives et certaines provocatrices."</em></li>
-<li><em>"Tout le monde parle de [sujet] de la même façon. Propose 5 angles originaux."</em></li></ul></div>`},
-{lbl:"✏️ Exercice",titre:"Exercice du Module 7",html:`<div class="encadre orange"><div class="encadre-title">🎯 Exercice guidé — Apprendre ton style (10 min)</div>
-<p>Trouve 2-3 textes que tu as écrits. Dans ton Projet :</p>
-<div class="prompt">"Voici des textes que j'ai écrits. Analyse mon style en 5 points précis. Décris mon vocabulaire, mes structures, mon ton, ce qui me distingue d'un style générique."</div>
-<p style="margin-top:8px;">Lis, corrige, ajoute dans les instructions de ton Projet.</p></div>
-<div class="encadre bleu" style="margin-top:12px;"><div class="encadre-title">🚀 Défi — Post dans ton style (10 min)</div>
-<p>Choisis un sujet que tu maîtrises. Demande un post LinkedIn dans ton style. Si ça ne sonne pas comme toi : <em>"Ce passage ne me ressemble pas. Je dirais plutôt [ta façon]. Recommence."</em></p></div>`}
+<li><em>"Tout le monde parle de [sujet] de la même façon. Propose 5 angles que personne n'a pris."</em></li>
+<li><em>"Quelles sont les questions que mes clients me posent le plus ? Chacune est un article potentiel."</em></li></ul></div>`},
+{lbl:"✏️ Exercice",titre:"Ton système de contenu",html:`<div class="encadre orange"><div class="encadre-title">🎯 Exercice — 20 min</div>
+<p><strong>Étape 1 — Capture ton style (8 min)</strong></p>
+<p>Trouve 2-3 textes que tu as écrits. Envoie-les à Claude :</p>
+<div class="prompt">"Analyse mon style en 5 points précis."</div>
+<p style="margin-top:8px;">Lis, corrige, puis crée une Compétence "mon-style" avec cette description (Personnaliser → Compétences → +).</p>
+<p style="margin-top:14px;"><strong>Étape 2 — Teste le recyclage (7 min)</strong></p>
+<p>Prends un contenu que tu as déjà écrit (article, email long, présentation). Demande à Claude de le transformer en 3 formats différents. Vérifie que ta Compétence "mon-style" s'est activée automatiquement.</p>
+<p style="margin-top:14px;"><strong>Étape 3 — Trouve ton prochain sujet (5 min)</strong></p>
+<p><em>"Quelles sont les 5 questions que mes clients me posent le plus souvent ?"</em> Puis : <em>"Pour la question [X], propose 3 angles d'article dont 1 contre-intuitif."</em></p>
+<p style="margin-top:8px;">Tu repars avec un sujet et un angle — prêt à écrire.</p></div>`}
 ],
-recap:{points:["Le piège à éviter : le contenu générique qui sonne IA. La solution : apprendre ton style à Claude avec tes propres textes. Une fois dans ton Projet, il l'applique automatiquement.","Pour chaque contenu : commence par l'angle, puis le plan, puis la rédaction section par section. Ne demande jamais 'écris l'article entier' d'un coup.","Le recyclage de contenu : un texte créé une fois peut devenir 5 formats différents en quelques minutes."],prompt:"Tu écriras dans mon style : [description]. Crée un [post / article / newsletter] sur [sujet]. Angle : [angle]. Longueur : [X mots]. Commence directement par le contenu."}},
+recap:{points:["Capture ton style en 4 étapes : donne tes textes → Claude analyse → tu corriges → tu sauvegardes en Compétence. C'est fait une fois, appliqué partout.","Le recyclage : un seul contenu devient 5 formats publiables. Un effort de réflexion, cinq publications.","L'anti-page-blanche : les questions de tes clients sont tes meilleurs sujets. Claude trouve les angles que tu n'aurais pas vus."]}},
 
-{partie:2,num:9,locked:false,titre:"Construire un workflow avec Claude",sub:"Automatise tes tâches récurrentes avec des séquences de prompts.",duree:"25 min",niv:"Intermédiaire",
+{partie:2,num:9,locked:false,titre:"Analyser et transformer des données",sub:"Excel, CSV, PDF — Claude lit, analyse et crée des documents professionnels.",duree:"25 min",niv:"Intermédiaire",
 sections:[
-{lbl:"🎯 Accroche",titre:"L'accroche",html:`<p class="block-text">Sophie passe 45 minutes chaque lundi sur ses rapports clients. Chaque semaine. Sans variation. Avec un workflow Claude bien construit, ces 45 minutes deviennent 10 — et la qualité s'améliore.</p>
-<p class="block-text">Un workflow, c'est une suite de prompts enchaînés. Au lieu d'un seul gros prompt qui fait tout, tu décomposes en étapes simples.</p>`},
-{lbl:"💡 Notion clé",titre:"Construire un workflow en 4 étapes",html:`<table class="tableau"><tr><th>Étape</th><th>Ce que tu fais</th></tr>
-<tr><td>1. Cartographier</td><td>Liste toutes les micro-étapes du processus de début en fin</td></tr>
-<tr><td>2. Identifier les inputs</td><td>Pour chaque étape, qu'est-ce que Claude doit savoir ?</td></tr>
-<tr><td>3. Écrire les prompts</td><td>Un prompt par étape. Teste chacun indépendamment.</td></tr>
-<tr><td>4. Créer le template</td><td>Assemble avec variables [entre crochets]. Sauvegarde dans ton Projet.</td></tr></table>
-<div class="encadre bleu" style="margin-top:14px;"><div class="encadre-title">📋 Exemple — Rapport client en 4 étapes</div><ul>
-<li>"Voici mes notes brutes : [notes]. Structure-les en : actions / points en cours / problèmes / décisions."</li>
-<li>"Parmi ces infos, identifie ce qui concerne le client [nom]. 5 points max."</li>
-<li>"Rédige le rapport hebdomadaire. Ton : [ton]. Structure : avancement / vigilance / prochaines étapes. 300 mots max."</li>
-<li>"Ajoute une accroche personnalisée sur : [détail spécifique à ce client]."</li></ul></div>`},
-{lbl:"👀 Exemple",titre:"5 workflows prêts à utiliser",html:`<div class="encadre orange"><div class="encadre-title">⚡ Emails du matin</div><ul>
-<li>"Classe mes emails non lus par priorité et indique le type de réponse nécessaire."</li>
-<li>"Pour l'email de [expéditeur], rédige une réponse professionnelle qui [objectif]. Max 5 lignes."</li></ul></div>
-<div class="encadre vert" style="margin-top:10px;"><div class="encadre-title">⚡ Préparation de réunion</div><ul>
-<li>"Je rencontre [qui] pour [objectif]. Quels arguments mettre en avant ? Quelles objections anticiper ?"</li>
-<li>"Crée-moi un ordre du jour avec timing et questions clés."</li></ul></div>
-<div class="encadre violet" style="margin-top:10px;"><div class="encadre-title">⚡ Bilan hebdomadaire</div><ul>
-<li>"Voici ce que j'ai accompli [liste] et ce qui n'a pas été fait [liste]. Analyse les écarts."</li>
-<li>"Pour la semaine prochaine [priorités], organise sur 5 jours de façon réaliste."</li></ul></div>`},
-{lbl:"✏️ Exercice",titre:"Exercice du Module 8",html:`<div class="encadre orange"><div class="encadre-title">🚀 Défi — Construis ton premier workflow (15 min)</div><ul>
-<li>Identifie ta tâche la plus répétitive (même processus à chaque fois)</li>
-<li>Décompose-la en 3 à 5 micro-étapes</li>
-<li>Écris un prompt pour chaque étape, teste-les</li>
-<li>Assemble en template avec variables [entre crochets], sauvegarde dans ton Projet</li></ul>
-<p style="margin-top:8px;">Note le temps gagné la prochaine fois que tu fais cette tâche.</p></div>`}
+{lbl:"🎯 Accroche",titre:"Le superpouvoir que personne ne connaît",html:`<p class="block-text">La plupart des gens utilisent Claude pour écrire du texte. Mais Claude sait aussi lire un tableur de 10 000 lignes, créer des graphiques, analyser un contrat de 50 pages, et générer des PowerPoint, des Excel et des PDF — directement dans la conversation.</p>
+<p class="block-text">Ce module te montre comment transformer Claude en analyste de données et en générateur de documents professionnels — sans aucune compétence technique.</p>`},
+{lbl:"💡 Notion clé",titre:"Claude lit ce que tu n'as pas le temps de lire",html:`<div class="encadre bleu"><div class="encadre-title">📊 Analyser un tableur</div>
+<p>Joins un fichier Excel ou CSV via le bouton +. Claude peut :</p><ul>
+<li>Identifier les tendances, anomalies et valeurs aberrantes</li>
+<li>Calculer des moyennes, totaux, pourcentages, comparaisons entre périodes</li>
+<li>Générer des graphiques directement dans le chat : barres, lignes, camemberts</li></ul>
+<p style="margin-top:10px;">Exemple :</p><ol style="padding-left:16px;display:flex;flex-direction:column;gap:6px;">
+<li style="font-size:14px;color:#444;"><em>"Voici mes ventes des 12 derniers mois [fichier joint]. Identifie les 3 tendances principales et les mois anormaux."</em></li>
+<li style="font-size:14px;color:#444;"><em>"Crée un graphique d'évolution du chiffre d'affaires par mois."</em></li>
+<li style="font-size:14px;color:#444;"><em>"Quels produits ont progressé et lesquels ont reculé ? Recommande 3 actions."</em></li></ol></div>
+<div class="encadre orange" style="margin-top:12px;"><div class="encadre-title">📄 Analyser un document long</div>
+<p>Joins un PDF, Word ou texte. Claude peut analyser jusqu'à 200 pages.</p>
+<p style="margin-top:8px;">Exemples :</p><ul>
+<li>Un rapport annuel : <em>"Résume les 5 chiffres clés et les 3 risques mentionnés."</em></li>
+<li>Un contrat : <em>"Liste mes obligations, les clauses inhabituelles, et les points à négocier."</em></li>
+<li>Une étude de marché : <em>"Extrais les données qui concernent mon secteur [secteur] et synthétise en 10 points."</em></li></ul></div>
+<div class="encadre rouge" style="margin-top:12px;"><div class="encadre-title">⚠️ Rappel</div><p>Claude peut se tromper sur les calculs complexes. Pour les chiffres critiques, vérifie avec un tableur. Demande-lui toujours <em>"Montre-moi comment tu as calculé ça."</em></p></div>`},
+{lbl:"🔧 En pratique",titre:"Claude génère tes documents",html:`<p class="block-text">Depuis février 2026, Claude peut créer des fichiers téléchargeables directement dans la conversation — gratuitement.</p>
+<table class="tableau"><tr><th>Format</th><th>Exemple de demande</th></tr>
+<tr><td>Excel (.xlsx)</td><td><em>"Crée un tableur de suivi budgétaire avec les colonnes : poste de dépense, prévu, réel, écart. Ajoute les formules de calcul."</em></td></tr>
+<tr><td>PowerPoint (.pptx)</td><td><em>"Crée une présentation de 10 slides pour [sujet]. Structure : problème, solution, bénéfices, prochaines étapes. Design professionnel."</em></td></tr>
+<tr><td>Word (.docx)</td><td><em>"Crée un modèle de proposition commerciale avec les sections : contexte, objectifs, méthodologie, livrables, tarifs, conditions."</em></td></tr>
+<tr><td>PDF</td><td><em>"Transforme cette analyse en PDF formaté, prêt à envoyer à mon client."</em></td></tr></table>
+<div class="encadre vert" style="margin-top:14px;"><div class="encadre-title">💡 Le combo analyse + document</div>
+<p>C'est là que ça devient puissant : tu analyses un fichier, puis tu génères un livrable à partir des résultats.</p><ol style="padding-left:16px;display:flex;flex-direction:column;gap:6px;">
+<li style="font-size:14px;color:#444;">Joins ton fichier de ventes → <em>"Analyse les tendances sur 12 mois."</em></li>
+<li style="font-size:14px;color:#444;"><em>"Crée un PowerPoint de 5 slides qui présente ces résultats à ma direction."</em></li>
+<li style="font-size:14px;color:#444;"><em>"Crée un Excel avec les données brutes et les graphiques en annexe."</em></li></ol>
+<p style="margin-top:10px;">En 3 messages : un fichier analysé, une présentation prête, un tableur de support. Télécharge ou sauvegarde sur Google Drive via ton Connecteur.</p></div>`},
+{lbl:"✏️ Exercice",titre:"Analyse et crée",html:`<div class="encadre orange"><div class="encadre-title">🎯 Exercice — 20 min</div>
+<p><strong>Étape 1 — Analyse un fichier réel (10 min)</strong></p>
+<p>Trouve un fichier que tu utilises au travail : tableur de suivi, export de données, factures, rapport. Joins-le à Claude et demande :</p>
+<div class="prompt">"Analyse ce fichier. Identifie les 3 informations les plus importantes que je devrais connaître et crée un graphique qui résume la situation."</div>
+<p style="margin-top:14px;"><strong>Étape 2 — Génère un document professionnel (10 min)</strong></p>
+<p>À partir de l'analyse, demande un livrable :</p><ul>
+<li>Si tu présentes à quelqu'un → un PowerPoint</li>
+<li>Si tu dois partager des données → un Excel</li>
+<li>Si tu dois envoyer un résumé → un PDF ou un Word</li></ul>
+<p style="margin-top:8px;">Télécharge le fichier. Est-ce que tu aurais pu le produire aussi vite manuellement ?</p></div>`}
 ],
-recap:{points:["Un workflow = une suite de prompts enchaînés. Un prompt = une étape = un livrable précis. Ne demande jamais tout en un seul prompt.","Construire en 4 étapes : cartographier, identifier les inputs, écrire les prompts, créer le template avec variables [entre crochets].","Sauvegarde tes templates dans ton Projet. La prochaine fois, copier-coller et remplir les variables. C'est là que se trouve le vrai gain de temps."],prompt:"Voici ma tâche récurrente : [description]. Je la fais [fréquence]. Infos pour cette fois : [inputs]. Étape [X] du workflow : [prompt]. Produis [livrable]."}},
+recap:{points:["Claude analyse tes fichiers (Excel, CSV, PDF) directement dans la conversation : tendances, anomalies, calculs, graphiques — sans compétence technique.","Claude génère des documents téléchargeables : Excel, PowerPoint, Word, PDF. Gratuit pour tous depuis février 2026.","Le vrai gain : enchaîner les deux. Analyse un fichier → génère un livrable prêt à envoyer. En 3 messages, tu produis ce qui prenait une demi-journée."]}},
 
 {partie:2,num:10,locked:false,titre:"Créer un agent simple sans coder",sub:"Un assistant spécialisé qui travaille exactement comme tu veux.",duree:"25 min",niv:"Intermédiaire",
 sections:[
