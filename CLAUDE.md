@@ -15,7 +15,8 @@ Site de formation gratuit en français : **"Maîtriser Claude de A à Z"**. SPA 
 
 ```
 Formation/
-├── index.html              ← structure HTML + page d'accueil
+├── index.html              ← structure HTML + page d'accueil (hero, section intro, grille modules, footer)
+├── favicon.svg             ← favicon ✦ bleu sombre
 ├── css/
 │   └── style.css           ← CSS formaté (variables, composants, responsive)
 ├── js/
@@ -38,7 +39,7 @@ Formation/
 ### Structure des données
 
 - `PARTIES[]` : 4 parties thématiques (Rassurer, Comprendre, Pratiquer, Monétiser), chacune avec label, titre, couleurs
-- `MODULES[]` : chaque module contient `{partie, num, locked, titre, sub, duree, niv, sections[], recap}`. Les sections ont `{lbl, titre, html}` (contenu HTML brut). La récap contient `{points[], prompt?}` — le prompt est présent dans tous les modules sauf les locked
+- `MODULES[]` : chaque module contient `{partie, num, locked, titre, sub, duree, niv, sections[], recap}`. Les sections ont `{lbl, titre, html}` (contenu HTML brut). La récap contient `{points[], prompt?}`. Note : `duree` est présent dans les données mais n'est plus affiché (retiré de l'UI)
 - Tous les modules sont débloqués (`locked: false`) avec du contenu complet
 
 ### Navigation
@@ -88,6 +89,8 @@ Composants réutilisables :
 - .tableau — tableaux stylisés avec en-tête bleu
 - .fiche-recap — fiche récapitulative en bas de module (fond bleu sombre)
 - .prompt — bloc de prompt en italique sur fond gris
+- .formation-intro / .formation-intro-text — section "Pourquoi cette formation" entre hero et grille
+- .site-footer / .footer-name / .footer-role / .footer-link — footer auteur avec lien LinkedIn
 ```
 
 ## Conventions
