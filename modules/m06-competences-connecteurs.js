@@ -13,7 +13,9 @@ sections:[
 <tr><td>Créer avec Claude</td><td>La plus simple</td><td>Claude te pose des questions et construit la compétence pour toi</td></tr>
 <tr><td>Rédiger les instructions</td><td>Si tu sais ce que tu veux</td><td>Formulaire avec 3 champs : Nom, Description, Instructions</td></tr>
 <tr><td>Téléverser</td><td>Utilisateurs avancés</td><td>Upload d'un fichier de compétence</td></tr></table></div>
-<div class="encadre vert" style="margin-top:12px;"><div class="encadre-title">💡 La description est cruciale</div><p>C'est elle qui permet à Claude de savoir <em>quand</em> activer la compétence. Sois précis : "À utiliser quand l'utilisateur demande un email professionnel, une relance, ou un message de prospection."</p></div>
+<div class="encadre vert" style="margin-top:12px;"><div class="encadre-title">💡 La description est cruciale</div><p>C'est elle qui permet à Claude de savoir <em>quand</em> activer la compétence. Une bonne description répond à <strong>2 questions</strong> : que fait cette compétence ? Et quand Claude doit-il l'utiliser ?</p>
+<p style="margin-top:8px;">Exemple : <em>"À utiliser quand l'utilisateur demande un email professionnel, une relance, ou un message de prospection."</em></p>
+<p style="margin-top:8px;"><strong>Si ta Compétence ne se déclenche pas</strong> quand tu t'y attends, enrichis sa description avec les mots et les phrases que tu utilises réellement quand tu fais cette demande.</p></div>
 <div class="encadre violet" style="margin-top:12px;"><div class="encadre-title">3 compétences à découvrir</div>
 <p style="margin-top:8px;"><strong>1. Mon style d'écriture (à créer toi-même)</strong></p>
 <ul><li><strong>Nom</strong> : mon-style</li>
