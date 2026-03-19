@@ -26,6 +26,7 @@ Formation/
 │   ├── m01-cest-quoi-claude.js
 │   ├── ...
 │   └── m14-ethique.js
+├── sources/                ← notes de recherche internes (cours Anthropic, 4D Framework) — pas publié
 └── CLAUDE.md
 ```
 
@@ -37,7 +38,7 @@ Formation/
 ### Structure des données
 
 - `PARTIES[]` : 4 parties thématiques (Rassurer, Comprendre, Pratiquer, Monétiser), chacune avec label, titre, couleurs
-- `MODULES[]` : chaque module contient `{partie, num, locked, titre, sub, duree, niv, sections[], recap}`. Les sections ont `{lbl, titre, html}` (contenu HTML brut). La récap contient `{points[], prompt?}` — le prompt est optionnel (absent pour les modules fonctionnalités)
+- `MODULES[]` : chaque module contient `{partie, num, locked, titre, sub, duree, niv, sections[], recap}`. Les sections ont `{lbl, titre, html}` (contenu HTML brut). La récap contient `{points[], prompt?}` — le prompt est présent dans tous les modules sauf les locked
 - Modules 13 et 14 sont marqués `locked: true` avec `sections: []` — contenu à venir
 - Le module "Automatiser son travail" (workflows, agents) n'a pas encore été créé
 
