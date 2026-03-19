@@ -33,7 +33,7 @@ sections:[
 <div class="encadre bleu" style="margin-top:12px;"><div class="encadre-title">Message 5 — Call-to-action et publication</div>
 <p><em>"À la fin du calcul, ajoute un bouton 'Demander un devis personnalisé' qui affiche mon email et mon téléphone."</em></p>
 <p style="margin-top:8px;">Puis clique sur "Publier" → copie le lien → partage-le à tes clients ou intègre-le sur ton site avec le code embed.</p></div>
-<div class="encadre vert" style="margin-top:12px;"><div class="encadre-title">💡 Astuce</div><p>Si tu veux que l'outil retienne les données entre les sessions (par exemple un tracker ou un journal), précise-le dans ton premier message — Claude peut sauvegarder jusqu'à 20 Mo de données.</p></div>
+<div class="encadre vert" style="margin-top:12px;"><div class="encadre-title">💡 Astuce</div><p>Si tu veux que l'outil retienne les données entre les sessions (par exemple un tracker ou un journal), précise-le dans ton premier message. Le stockage persistant (jusqu'à 20 Mo par artéfact, texte uniquement) est disponible sur les plans payants (Pro, Max). Sur le plan gratuit, les données ne sont pas conservées entre les sessions.</p></div>
 <p class="block-text" style="margin-top:12px;">En 5 messages et 15 minutes, tu as un outil professionnel partageable — sans avoir écrit une ligne de code.</p>`},
 {lbl:"✏️ Exercice",titre:"Ton premier outil",html:`<div class="encadre orange"><div class="encadre-title">🎯 Exercice — 20 min</div>
 <p><strong>Étape 1 — Choisis ton outil (2 min)</strong></p>
