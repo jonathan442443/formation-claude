@@ -14,8 +14,8 @@ import m12 from '../modules/m12-opportunites.js';
 import m13 from '../modules/m13-ethique.js';
 
 export const PARTIES = [
-  {label:"Partie 1",titre:"Rassurer",bg:"#EBF5FB",color:"#1B4F8A"},
-  {label:"Partie 2",titre:"Comprendre",bg:"#FEF3DC",color:"#b5770a"},
+  {label:"Partie 1",titre:"Rassurer",bg:"#E8EEF5",color:"#1E3A5F"},
+  {label:"Partie 2",titre:"Comprendre",bg:"#FEF3DC",color:"#D97706"},
   {label:"Partie 3",titre:"Pratiquer",bg:"#D6F0E0",color:"#1A7A4A"},
   {label:"Partie 4",titre:"Monétiser",bg:"#EBD5F5",color:"#6C3483"},
 ];

@@ -4,21 +4,30 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Maîtriser Claude de A à Z — Formation Gratuite</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<nav class="site-nav">
-  <div class="nav-logo" onclick="showHome()">
+<a class="skip-link" href="#page-home">Aller au contenu</a>
+
+<nav class="site-nav" role="navigation" aria-label="Navigation principale">
+  <div class="nav-logo" onclick="showHome()" role="button" tabindex="0" aria-label="Retour à l'accueil">
     <div class="nav-logo-icon">✦</div>
     <span class="nav-logo-text">Formation Claude</span>
   </div>
+  <button class="burger-btn" id="burgerBtn" aria-label="Menu" aria-expanded="false">
+    <span class="burger-line"></span>
+    <span class="burger-line"></span>
+    <span class="burger-line"></span>
+  </button>
   <div class="nav-links" id="navLinks"></div>
   <span class="nav-badge">100% Gratuit</span>
+  <div class="progress-bar"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
 </nav>
-<div class="progress-bar"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
 
 <!-- HOME -->
 <div class="page active" id="page-home">
@@ -37,10 +46,30 @@
         <button class="btn-secondary" onclick="document.getElementById('idx').scrollIntoView({behavior:'smooth'})">Voir tous les modules</button>
       </div>
     </div>
+    <div class="hero-scroll" aria-hidden="true">
+      <span class="hero-scroll-chevron">&#8595;</span>
+    </div>
   </section>
   <section class="formation-intro">
     <h2 class="section-title">Pourquoi cette formation ?</h2>
-    <p class="formation-intro-text">Pour optimiser ton utilisation de Claude et découvrir ses meilleures fonctionnalités. Du premier prompt jusqu'à la création d'outils sans coder — avec des exercices concrets à chaque étape, à ton rythme.</p>
+    <p class="formation-intro-text">Pour optimiser ton utilisation de Claude et découvrir ses meilleures fonctionnalités.</p>
+    <div class="intro-grid">
+      <div class="intro-card">
+        <span class="intro-icon">🎯</span>
+        <h3 class="intro-card-title">Exercices concrets</h3>
+        <p class="intro-card-text">Chaque module produit un résultat utilisable aujourd'hui dans ta vie pro.</p>
+      </div>
+      <div class="intro-card">
+        <span class="intro-icon">⏱️</span>
+        <h3 class="intro-card-title">À ton rythme</h3>
+        <p class="intro-card-text">14 modules progressifs, du premier prompt jusqu'à la création d'outils sans coder.</p>
+      </div>
+      <div class="intro-card">
+        <span class="intro-icon">💡</span>
+        <h3 class="intro-card-title">Sans jargon</h3>
+        <p class="intro-card-text">Aucun prérequis technique. On part de zéro, vraiment.</p>
+      </div>
+    </div>
   </section>
   <div class="modules-index" id="idx">
     <p class="section-label">Le programme complet</p>
