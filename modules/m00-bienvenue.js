@@ -1,8 +1,8 @@
 export default {partie:0,num:0,locked:false,titre:"Bienvenue !",sub:"Ce que tu vas apprendre ici, et ton premier exercice.",duree:"20 min",niv:"Débutant",
 sections:[
-{lbl:"🎯 Accroche",titre:"Pourquoi cette formation",html:`<p class="block-text">Tout le monde utilise l'IA. Peu de gens savent vraiment s'en servir. La différence ? Ceux qui obtiennent des résultats concrets ont appris à poser les bonnes questions — rien de plus.</p>
-<div class="encadre bleu"><div class="encadre-title">💭 La question que tu te poses sûrement</div><p>"J'ai déjà essayé, mais je ne sais pas quoi demander. Est-ce que c'est vraiment fait pour moi ?"</p></div>
-<p class="block-text">Oui. Cette formation part de zéro. Pas de jargon, pas de code, pas de prérequis. À la fin de ce module, tu sauras exactement ce qui t'attend et pourquoi ça va fonctionner pour toi.</p>`},
+{lbl:"🎯 Accroche",titre:"Pourquoi cette formation",html:`<p class="block-text">Utiliser Claude efficacement, ça s'apprend. Pas besoin de connaissances techniques, mais il y a une méthode. C'est ce que cette formation couvre en 14 modules.</p>
+<p class="block-text">Chaque module se termine par un exercice sur tes vraies tâches pro. Pas de théorie abstraite : tu apprends en faisant, avec Claude ouvert à côté.</p>
+<p class="block-text">Ce premier module pose le cadre : ce que tu vas apprendre, dans quel ordre, et comment tirer le maximum de chaque étape.</p>`},
 {lbl:"🗺️ Le parcours",titre:"Ce qui t'attend",html:`<p class="block-text">Dans 2 semaines, tu sauras obtenir de Claude des résultats concrets en quelques minutes — sur tes vraies tâches, pas des démos. Voici comment on y arrive :</p>
 <table class="tableau"><tr><th>Partie</th><th>Objectif</th><th>Modules</th></tr>
 <tr><td>🟦 Découvrir</td><td>Tu prends Claude en main, tu envoies ton premier message</td><td>0 à 2</td></tr>
