@@ -38,7 +38,7 @@ Formation/
 
 ### Structure des données
 
-- `PARTIES[]` : 4 parties thématiques (Rassurer, Comprendre, Pratiquer, Monétiser), chacune avec label, titre, couleurs
+- `PARTIES[]` : 4 parties thématiques (Découvrir, Comprendre, Pratiquer, Monétiser), chacune avec label, titre, couleurs
 - `MODULES[]` : chaque module contient `{partie, num, locked, titre, sub, duree, niv, sections[], recap}`. Les sections ont `{lbl, titre, html}` (contenu HTML brut). La récap contient `{points[], prompt?}`. Note : `duree` est présent dans les données mais n'est plus affiché (retiré de l'UI)
 - Tous les modules sont débloqués (`locked: false`) avec du contenu complet
 
@@ -51,7 +51,7 @@ Formation/
 
 ## Structure de la formation (14 modules, 4 parties)
 
-### 🟦 Partie 1 — Rassurer (M0 à M2)
+### 🟦 Partie 1 — Découvrir (M0 à M2)
 - M0 : Bienvenue — premier contact avec Claude
 - M1 : C'est quoi Claude — forces, limites, 3 modèles (Haiku 4.5/Sonnet 4.6/Opus 4.6), quota
 - M2 : Prendre Claude en main — interface, barre latérale, zone de chat
@@ -99,7 +99,7 @@ Composants réutilisables :
 - Les labels de section varient selon le contenu (pas de pattern fixe) : 🎯 Accroche, 💡 Notion clé, 👀 En pratique, ✏️ Exercice, etc.
 - Les titres de section sont engageants et orientés bénéfice (jamais "L'accroche" ou "L'exemple")
 - Chaque fiche récap contient exactement 3 points. Le prompt modèle est optionnel.
-- Les parties ont un code couleur cohérent : bleu (Rassurer), orange (Comprendre), vert (Pratiquer), violet (Monétiser)
+- Les parties ont un code couleur cohérent : bleu (Découvrir), orange (Comprendre), vert (Pratiquer), violet (Monétiser)
 - Les informations sur Claude doivent être vérifiées en ligne avant d'être incluses (fonctionnalités, interface, limites évoluent vite)
 - Les captures d'écran de claude.ai servent de référence pour décrire l'interface — ne pas deviner
 
